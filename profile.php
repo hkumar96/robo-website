@@ -28,17 +28,17 @@ include ('file.php');
         <header id="home">
           <nav class="navbar-fixed-top navbar-default">
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">Robotics Club</a>
+              <a class="navbar-brand" href="index.php">Robotics Club</a>
             </div>
             <div class = "navbar-right">
               <ul class="nav navbar-nav">
-                <li><a href="index.html#intro">Introduction</a></li>
-                <li><a href="index.html#responsiveS">News and Achievements</a></li>
-                <li><a href="index.html#portfolio">Projects</a></li>
-                <li><a href="index.html#team">Team</a></li>
-                <li><a href="index.html#mail">Write to us</a></li>
-                <li><a href="index.html#contact">Get in Touch</a></li>
-                <li class = "dropdown">/
+                <li><a href="index.php#intro">Introduction</a></li>
+                <li><a href="index.php#responsiveS">News and Achievements</a></li>
+                <li><a href="index.php#portfolio">Projects</a></li>
+                <li><a href="index.php#team">Team</a></li>
+                <li><a href="index.php#mail">Write to us</a></li>
+                <li><a href="index.php#contact">Get in Touch</a></li>
+                <li class = "dropdown">
 	        		<a class = "dropdown-toggle" type = "button" data-toggle = "dropdown" role = "button" aria-haspopup = "true" aria-expanded = "false"><?php echo $login_session; ?><span class = "caret"></span>
 	        		</a>
 	        		<ul class = "dropdown-menu">
@@ -99,7 +99,7 @@ include ('file.php');
                   	<button class = "btn btn-default" type = "submit" name = "upload">Upload</button>
                     <div class = "row">
                         <div class = "col-md-12">
-                          <span><?php echo $message; ?></span>
+                          <span><?php echo $message;?></span>
                         </div>
                       </div>
                   </form>
@@ -118,7 +118,8 @@ include ('file.php');
                 </ul>
               </div>
               <div class="col-md-6 credit">
-                <p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Hemant Kumar</a> exclusively for <a href="http://tympanus.net/codrops/"><em>Robotics Club</em></a></p>
+                <p>Designed &amp; Developed by <a href="#">Hemant Kumar</a> exclusively for <a href="index.php"><em>Robotics Club</em></a></p>
+                <p>Theme credits: <a href="http://www.peterfinlan.com/">Peter Finlan</a></p>
               </div>
             </div>
           </div>
@@ -149,7 +150,12 @@ include ('file.php');
             });
             $("button[name = 'upload']").click(function(){
               var name = $("input[name = 'tut_file']").val();
-              
+            });
+            $('form').submit(function(){
+              if($.trim($("input[name = 'title']").val()) === "" || $.trim($("textarea[name = 'desc'] ").val()) === ""){
+                alert('You did not fill all the fields');
+                return false;
+              }
             });
           });
         </script>

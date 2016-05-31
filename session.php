@@ -1,9 +1,5 @@
 <?php
-$dbhost = 'localhost:3036';
-$dbuser = 'guest';
-$dbpass = 'guest123';
-
-$conn = mysql_connect($dbhost,$dbuser,$dbpass);
+include 'dbconn.php';
 session_start();
 $username = $_SESSION['login_user'];
 $sql = "SELECT user_name from profile where user_name = $username;";

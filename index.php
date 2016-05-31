@@ -15,7 +15,7 @@ if(isset($_SESSION['login_user'])){
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/flexslider.css" rel="stylesheet" >
-    <link href="css/styles.css" rel="stylesheet">    
+    <link href="css/styles.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/req_style.css" rel="stylesheet">
@@ -30,7 +30,7 @@ if(isset($_SESSION['login_user'])){
         <header id="home">
           <nav class="navbar-fixed-top navbar-default">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">Robotics Club</a>
+              <a class="navbar-brand" href="index.php">Robotics Club</a>
             </div>
             <div class = "navbar-right">
               <ul class="nav navbar-nav">
@@ -42,11 +42,9 @@ if(isset($_SESSION['login_user'])){
                 <li><a href="#contact">Get in Touch</a></li>
                 <li><a data-toggle = "modal" data-target = "#login">Login</a></li>
               </ul>
+
             </div>                    
           </nav>
-
-          <!-- MODAL -->
-
           <div class = "modal fade" id = "login" tab-index = "-1" role = "dialog">
             <div class = "modal-dialog">
               <div class = "modal-content">
@@ -78,10 +76,13 @@ if(isset($_SESSION['login_user'])){
               </div>
             </div>
           </div>
-
-
           <section class="hero" id="hero">
-            <div class="container">              
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"></a>
+                </div>
+              </div>
               <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center inner">
                   <h1 class="animated fadeInDown">ROBOTICS<span>CLUB</span></h1>
@@ -90,7 +91,7 @@ if(isset($_SESSION['login_user'])){
               </div>
               <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                  <a href="tutorials.html" class="learn-more-btn">Jump to tutorials</a>
+                  <a href="tutorials.php" class="learn-more-btn">Jump to tutorials</a>
                 </div>
               </div>
             </div>
@@ -119,14 +120,14 @@ if(isset($_SESSION['login_user'])){
                     <h2>Mechanical Design</h2>
                     <p>Interested in robots? Well start designing one with us. Learn and excel designing tools. Run cool simulations and measure different parameters.  </p>
                   </div>
-                  <div class="col-md-4 wp2 delay-1s">
+                  <div class="col-md-4 wp2 delay-05s">
                     <div class="icon">
                       <i class="fa fa-lightbulb-o shadow"></i>
                     </div>
                     <h2>Electronics</h2>
                     <p>With us you will get to learn and work on a wide range of electronic components varying from small led's to big microcontrollers such as Arduino, Raspberry Pi etc. </p>
                   </div>
-                  <div class="col-md-4 wp2 delay-05s">
+                  <div class="col-md-4 wp2 delay-1s">
                     <div class="icon">
                       <i class="fa fa-code shadow"></i>
                     </div>
@@ -639,13 +640,14 @@ if(isset($_SESSION['login_user'])){
             <div class="row">
               <div class="col-md-6">
                 <ul class="legals">
-                  <li><a href="#">FAQs</a></li>
+                  <li><a href="faq.html">FAQs</a></li>
                   <li><a href="http://students.iitk.ac.in/roboclub/useful.html">Useful links</a></li>
                   <li><i class="fa fa-copyright"></i>Copyright 2016. All rights reserved</li>
                 </ul>
               </div>
               <div class="col-md-6 credit">
-                <p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Hemant Kumar</a> exclusively for <a href="http://tympanus.net/codrops/"><em>Robotics Club</em></a></p>
+                <p>Designed &amp; Developed by <a href="#">Hemant Kumar</a> exclusively for <a href="index.php"><em>Robotics Club</em></a></p>
+                <p>Theme credits: <a href="http://www.peterfinlan.com/">Peter Finlan</a></p>
               </div>
             </div>
           </div>

@@ -1,3 +1,6 @@
+<?php
+  include 'getlist.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,16 +27,16 @@
         <header id="home">
           <nav class="navbar-fixed-top navbar-default">
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">Robotics Club</a>
+              <a class="navbar-brand" href="index.php">Robotics Club</a>
             </div>
             <div class = "navbar-right">
               <ul class="nav navbar-nav">
-                <li><a href="index.html#intro">Introduction</a></li>
-                <li><a href="index.html#responsiveS">News and Achievements</a></li>
-                <li><a href="index.html#portfolio">Projects</a></li>
-                <li><a href="index.html#team">Team</a></li>
-                <li><a href="index.html#mail">Write to us</a></li>
-                <li><a href="index.html#contact">Get in Touch</a></li>
+                <li><a href="index.php#intro">Introduction</a></li>
+                <li><a href="index.php#responsiveS">News and Achievements</a></li>
+                <li><a href="index.php#portfolio">Projects</a></li>
+                <li><a href="index.php#team">Team</a></li>
+                <li><a href="index.php#mail">Write to us</a></li>
+                <li><a href="index.php#contact">Get in Touch</a></li>
               </ul>
             </div>                    
           </nav>
@@ -53,63 +56,7 @@
         <section class="portfolio text-center section-padding" id="portfolio">
           <div class="container">
             <div class="row">
-                <div class = "row">
-                  <div class = "col-md-12">
-                    <h1 class="arrow">Category 1</h1>
-                  </div>
-                </div>
-                <div class = "row">
-                  <div class="col-md-4 wp4">                    
-                    <a href="#">
-                      <h2>Tut 1 </h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                    </a>
-                  </div>
-                  <div class="col-md-4 wp4">                    
-                    <a href="#">
-                      <h2>Tut 2 </h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                    </a>
-                  </div>
-                  <div class="col-md-4 wp4">                    
-                    <a href="#">
-                      <h2>Tut 3 </h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                    </a>
-                  </div>
-            </div>
-            <div class="row">
-              <div class = "row">
-                <div class = "col-md-12">
-                  <h1 class="arrow">Category 1</h1>
-                </div>
-              </div>
-              <div class = "row">
-                <div class="col-md-4 wp4">                    
-                  <a href="#">
-                    <h2>Tut 1 </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                  </a>
-                </div>
-                <div class="col-md-4 wp4">                    
-                  <a href="#">
-                    <h2>Tut 2 </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                  </a>
-                </div>
-                <div class="col-md-4 wp4">                    
-                  <a href="#">
-                    <h2>Tut 3 </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                  </a>
-                </div>
-                <div class="col-md-4 wp4">                    
-                  <a href="#">
-                    <h2>Tut 3 </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
-                  </a>
-                </div>
-              </div>
+              <?php echo $result ?>;
             </div>
           </div>
         </section>
@@ -163,7 +110,8 @@
                 </ul>
               </div>
               <div class="col-md-6 credit">
-                <p>Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Hemant Kumar</a> exclusively for <a href="http://tympanus.net/codrops/"><em>Robotics Club</em></a></p>
+                <p>Designed &amp; Developed by <a href="#">Hemant Kumar</a> exclusively for <a href="index.php"><em>Robotics Club</em></a></p>
+                <p>Theme credits: <a href="http://www.peterfinlan.com/">Peter Finlan</a></p>
               </div>
             </div>
           </div>

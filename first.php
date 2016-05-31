@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'dbconn.php';
 $token = false;
 $username = "'hemantk";
 $password = "'m$0h@ppy'";
@@ -14,15 +15,9 @@ if (isset($_POST['login']) && !empty($_POST['username'] && !empty($_POST['passwo
 	echo $username;
 	echo $password;
 }
-$token = true;
+//$token = true;
 if ($token) {
-	$dbhost = 'localhost:3036';
-	$dbuser = 'guest';
-	$dbpass = 'guest123';
-
-	$conn = mysql_connect($dbhost,$dbuser,$dbpass);
-
-	if (! $conn) {
+	if (!$conn) {
 		die("could not connect:". mysql_error());
 	}
 	$username = mysql_real_escape_string($username);
