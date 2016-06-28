@@ -32,7 +32,7 @@
             <div class = "navbar-right">
               <ul class="nav navbar-nav">
                 <li><a href="index.php#intro">Introduction</a></li>
-                <li><a href="index.php#responsiveS">News and Achievements</a></li>
+                <li><a href="index.php#responsive">News and Achievements</a></li>
                 <li><a href="index.php#portfolio">Projects</a></li>
                 <li><a href="index.php#team">Team</a></li>
                 <li><a href="index.php#mail">Write to us</a></li>

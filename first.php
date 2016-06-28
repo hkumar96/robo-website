@@ -8,13 +8,14 @@ if (isset($_POST['login']) && !empty($_POST['username'] && !empty($_POST['passwo
 	$token = true;
 	$username = $_POST['username'];
 	$password = $_POST['password'];
-	echo $username;
-	echo $password;
+	//echo $username;
+	//echo $password;
 	$username = stripslashes($username);
 	$password = stripslashes($password);
-	echo $username;
-	echo $password;
+	//echo $username;
+	//echo $password;
 }
+
 //$token = true;
 if ($token) {
 	if (!$conn) {
@@ -22,10 +23,10 @@ if ($token) {
 	}
 	$username = mysql_real_escape_string($username);
 	$password = mysql_real_escape_string($password);
-	echo $username;
-	echo $password;
+	// echo $username;
+	// echo $password;
 	$sql = sprintf("SELECT user_name from user where user_name = '%s' && password = PASSWORD('%s')",$username,$password);
-	echo $sql;
+	//echo $sql;
 	mysql_select_db('ROBO');
 	$retval = mysql_query($sql,$conn);
 	$rows = mysql_num_rows($retval);
@@ -36,7 +37,8 @@ if ($token) {
 	}
 	else{
 		$error = "Username or password is invalid";
-		echo $error;
+		header("location:index.php");
+		//echo $error;
 	}
 	// if(!$retval){
 	// 	die('could not get data:'.mysql_error());
@@ -44,7 +46,8 @@ if ($token) {
 	// while ($row = mysql_fetch_assoc($retval)) {
 	// 	echo $row['user_name'];
 	// }
-	echo "connected succesfully";
+	//echo "connected succesfully";
 	mysql_close($conn);
 }
+
 ?>

@@ -1,4 +1,5 @@
 <?php
+//Things to include File size, update profile
 include('first.php');
 if(isset($_SESSION['login_user'])){
   header("location:profile.php");
@@ -27,6 +28,7 @@ if(isset($_SESSION['login_user'])){
         <![endif]-->
       </head>
       <body id="top">
+        <script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5" async></script>
         <header id="home">
           <nav class="navbar-fixed-top navbar-default">
             <div class="navbar-header">
@@ -34,7 +36,7 @@ if(isset($_SESSION['login_user'])){
             </div>
             <div class = "navbar-right">
               <ul class="nav navbar-nav">
-                <li><a href="#intro">Introduction </a></li>
+                <li class = "active"><a href="#intro">Introduction </a></li>
                 <li><a href="#responsive">News and Achievements </a></li>
                 <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#team">Team</a></li>
@@ -54,7 +56,7 @@ if(isset($_SESSION['login_user'])){
                     <h4 class = "modal-title">Login!</h4>
                   </div>
                   <div class = "modal-body">
-                    <form role = "form" action = "first.php" method = "post">
+                    <form role = "form" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "post">
                       <div class = "form-group">
                         <div class = "row">
                           <div class = "col-md-12">
@@ -153,12 +155,6 @@ if(isset($_SESSION['login_user'])){
                 <div class="col-md-5 col-md-offset-7">
                   <div id="servicesSlider">
                     <ul class="slides">
-                      <li>
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2Fposts%2F529198010600040%3A0&width=500" width="450" height="304" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                      </li>
-                      <li>
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2Fposts%2F513191458867362&width=500" width="500" height="424" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                      </li>
                       <li>
                         <h1 class="arrow">Develop</h1>
                         <p>Constructing the robot, doing trial runs, minimizing the human errors</p>
@@ -302,8 +298,8 @@ if(isset($_SESSION['login_user'])){
             </div>
             <div class="row">
               <h1 class="arrow">Co-ordinators</h1>
-              <div class="team-wrapper">
-                <div id="teamSlider">
+              <div class="">
+                <div id="">
                   <ul class="slides profiles">
                     <li>
                       <div class="col-md-3 wp5">
@@ -660,5 +656,13 @@ if(isset($_SESSION['login_user'])){
         <script src="js/scripts.js"></script>
         <script src="js/jquery.flexslider.js"></script>
         <script src="js/modernizr.js"></script>
+        <script type="text/javascript">
+        $('document').ready(function(){
+          $('.navbar-default .navbar-nav > li > a').click(function(){
+            $('.navbar-nav navbar-nav > li').removeClass('active');
+            $(this).parent('li').addClass('active');
+          });
+        });
+        </script>
       </body>
     </html>

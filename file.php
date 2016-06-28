@@ -117,7 +117,7 @@ if(isset($_POST["upload"])) {
       $description = stripslashes($description);
       $description = mysql_real_escape_string($description);
 
-      $link = "http://localhost/example.com/HalcyonDaysTemplate/uploads/" . $file_id . '.' . $file_ext;
+      $link = "http://172.20.192.25/example.com/HalcyonDaysTemplate/uploads/" . $file_id . '.' . $file_ext;
 
       $query = sprintf("INSERT INTO file (file_name,size,location,category_id,user_name,description) VALUES ('%s',$file_size,'%s',$category_id,'%s','%s'); ",$title,$link,$login_session,$description);
       $retval = mysql_query($query,$conn);
