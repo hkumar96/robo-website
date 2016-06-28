@@ -27,26 +27,29 @@ if(isset($_SESSION['login_user'])){
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
       </head>
-      <body id="top">
+      <body id="top" data-spy="scroll" data-target="#navbar" data-offset="50">
         <script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5" async></script>
         <header id="home">
-          <nav class="navbar-fixed-top navbar-default">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="index.php">Robotics Club</a>
-            </div>
-            <div class = "navbar-right">
-              <ul class="nav navbar-nav">
-                <li class = "active"><a href="#intro">Introduction </a></li>
-                <li><a href="#responsive">News and Achievements </a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#mail">Write to us</a></li>
-                <li><a href="#contact">Get in Touch</a></li>
-                <li><a data-toggle = "modal" data-target = "#login">Login</a></li>
-              </ul>
+          <div id = "navbar">
+            <nav class=" navbar navbar-fixed-top navbar-default">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.php">Robotics Club</a>
+              </div>
+              <div class = "navbar-right">
+                <ul class="nav navbar-nav">
+                  <li class = "active"><a href="#intro">Introduction </a></li>
+                  <li><a href="#responsive">News and Achievements </a></li>
+                  <li><a href="#portfolio">Projects</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#mail">Write to us</a></li>
+                  <li><a href="#contact">Get in Touch</a></li>
+                  <li><a data-toggle = "modal" data-target = "#login">Login</a></li>
+                </ul>
 
-            </div>                    
-          </nav>
+              </div>
+            </nav>
+
+          </div>
           <div class = "modal fade" id = "login" tab-index = "-1" role = "dialog">
             <div class = "modal-dialog">
               <div class = "modal-content">
@@ -308,17 +311,17 @@ if(isset($_SESSION['login_user'])){
                         <p>ankitkur@iitk.ac.in<br>Room B-305/5<br>9044127554</p>
                         <div class="social">
                           <ul class="social-buttons">
-                            <li><a href="https://www.facebook.com/iitk.ankit" class="social-btn" target = "_blank"><i class="fa fa-facebook"></i></a></li>      
+                            <li><a href="https://www.facebook.com/iitk.ankit" class="social-btn" target = "_blank"><i class="fa fa-facebook"></i></a></li>
                           </ul>
                         </div>
-                      </div>                      
+                      </div>
                       <div class="col-md-3 wp5 delay-05s">
                         <img src="http://students.iitk.ac.in/roboclub/images/team/anvesh.jpg" alt="Team Member">
                         <h2>Anvesh Jadon</h2>
                         <p>anvesh@iitk.ac.in<br>Room A-305/10<br>7755047820</p>
                         <div class="social">
                           <ul class="social-buttons">
-                            <li><a href="https://www.facebook.com/anveshjadon6197" class="social-btn" target = "_blank"><i class="fa fa-facebook"></i></a></li>                          
+                            <li><a href="https://www.facebook.com/anveshjadon6197" class="social-btn" target = "_blank"><i class="fa fa-facebook"></i></a></li>
                           </ul>
                         </div>
                       </div>
@@ -328,7 +331,7 @@ if(isset($_SESSION['login_user'])){
                         <p>hemantk@iitk.ac.in<br>Room B-304/5<br>8960806551</p>
                         <div class="social">
                           <ul class="social-buttons">
-                            <li><a href="https://www.facebook.com/hemant96kumar" class="social-btn" target = "_blank"><i class="fa fa-facebook"></i></a></li>                            
+                            <li><a href="https://www.facebook.com/hemant96kumar" class="social-btn" target = "_blank"><i class="fa fa-facebook"></i></a></li>
                           </ul>
                         </div>
 
@@ -339,7 +342,7 @@ if(isset($_SESSION['login_user'])){
                         <p>mayankm@iitk.ac.in<br>Room A-305/5<br>7755057609</p>
                         <div class="social">
                           <ul class="social-buttons">
-                            <li><a href="https://www.facebook.com/mayank.mittal.7543" class="social-btn" target = "_blank"><i class="fa fa-facebook"></i></a></li>                  
+                            <li><a href="https://www.facebook.com/mayank.mittal.7543" class="social-btn" target = "_blank"><i class="fa fa-facebook"></i></a></li>
                           </ul>
                         </div>
                       </div>
@@ -365,7 +368,7 @@ if(isset($_SESSION['login_user'])){
                             <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
                           </ul>
                         </div>
-                      </div>                      
+                      </div>
                       <div class="col-md-2 wp5 ">
                         <img src="img/team-02.png" alt="Team Member">
                         <h2>Cersei Lannister</h2>
@@ -439,7 +442,7 @@ if(isset($_SESSION['login_user'])){
                             <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
                           </ul>
                         </div>
-                      </div>                      
+                      </div>
                       <div class="col-md-2 wp5 ">
                         <img src="img/team-02.png" alt="Team Member">
                         <h2>Cersei Lannister</h2>
@@ -513,7 +516,7 @@ if(isset($_SESSION['login_user'])){
                             <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
                           </ul>
                         </div>
-                      </div>                      
+                      </div>
                       <div class="col-md-2 wp5 ">
                         <img src="img/team-02.png" alt="Team Member">
                         <h2>Cersei Lannister</h2>
@@ -606,7 +609,7 @@ if(isset($_SESSION['login_user'])){
                   <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
                   <p>Hall-2, IIT Kanpur, Kanpur<br>Uttar Pradesh, 208016</p>
                 </div>
-              </div>              
+              </div>
               <div class="col-md-6">
                 <div class="light-box box-hover">
                   <h2><i class="fa fa-envelope"></i><span>Email</span></h2>
@@ -616,7 +619,7 @@ if(isset($_SESSION['login_user'])){
             </div>
             <div class="row contact-details">
               <div class="col-md-12">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.2872748678724!2d80.22778855014505!3d26.510883783573902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c36ffad76ef6b%3A0xa76d0384176b9417!2sRobotics+Club!5e0!3m2!1sen!2sin!4v1462012384639" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.2872748678724!2d80.22778855014505!3d26.510883783573902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c36ffad76ef6b%3A0xa76d0384176b9417!2sRobotics+Club!5e0!3m2!1sen!2sin!4v1462012384639" frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
             </div>
             <div class="row">
@@ -658,10 +661,9 @@ if(isset($_SESSION['login_user'])){
         <script src="js/modernizr.js"></script>
         <script type="text/javascript">
         $('document').ready(function(){
-          $('.navbar-default .navbar-nav > li > a').click(function(){
-            $('.navbar-nav navbar-nav > li').removeClass('active');
-            $(this).parent('li').addClass('active');
-          });
+          $('[data-spy="scroll"]').each(function () {
+            var $spy = $(this).scrollspy('refresh')
+          })
         });
         </script>
       </body>
