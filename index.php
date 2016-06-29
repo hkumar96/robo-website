@@ -27,17 +27,23 @@ if(isset($_SESSION['login_user'])){
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
       </head>
-      <body id="top" data-spy="scroll" data-target="#navbar" data-offset="50">
+      <body id="top">
         <script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5" async></script>
         <header id="home">
-          <div id = "navbar">
+          <div clas = "container">
             <nav class=" navbar navbar-fixed-top navbar-default">
               <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="index.php">Robotics Club</a>
               </div>
-              <div class = "navbar-right">
+              <div class = "navbar-right navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                  <li class = "active"><a href="#intro">Introduction </a></li>
+                  <li><a href="#intro">Introduction </a></li>
                   <li><a href="#responsive">News and Achievements </a></li>
                   <li><a href="#portfolio">Projects</a></li>
                   <li><a href="#team">Team</a></li>
@@ -45,10 +51,8 @@ if(isset($_SESSION['login_user'])){
                   <li><a href="#contact">Get in Touch</a></li>
                   <li><a data-toggle = "modal" data-target = "#login">Login</a></li>
                 </ul>
-
               </div>
             </nav>
-
           </div>
           <div class = "modal fade" id = "login" tab-index = "-1" role = "dialog">
             <div class = "modal-dialog">
@@ -305,7 +309,7 @@ if(isset($_SESSION['login_user'])){
                 <div id="">
                   <ul class="slides profiles">
                     <li>
-                      <div class="col-md-3 wp5">
+                      <div class="col-md-3 col-xs-6 wp5">
                         <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xtf1/t31.0-1/c0.100.1043.1043/s960x960/980495_934193099962852_3050804911360984962_o.jpg" alt="Team Member">
                         <h2>Ankit Kumar</h2>
                         <p>ankitkur@iitk.ac.in<br>Room B-305/5<br>9044127554</p>
@@ -315,7 +319,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-3 wp5 delay-05s">
+                      <div class="col-md-3 col-xs-6 wp5 delay-05s">
                         <img src="http://students.iitk.ac.in/roboclub/images/team/anvesh.jpg" alt="Team Member">
                         <h2>Anvesh Jadon</h2>
                         <p>anvesh@iitk.ac.in<br>Room A-305/10<br>7755047820</p>
@@ -325,7 +329,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-3 wp5 delay-1s">
+                      <div class="col-md-3 col-xs-6 wp5 delay-1s">
                         <img src="http://students.iitk.ac.in/roboclub/images/team/hemantk.jpg" alt="Team Member">
                         <h2>Hemant Kumar</h2>
                         <p>hemantk@iitk.ac.in<br>Room B-304/5<br>8960806551</p>
@@ -336,7 +340,7 @@ if(isset($_SESSION['login_user'])){
                         </div>
 
                       </div>
-                      <div class="col-md-3 wp5 delay-105s">
+                      <div class="col-md-3 col-xs-6 wp5 delay-105s">
                         <img src="http://students.iitk.ac.in/roboclub/images/team/mayankm.jpg" alt="Team Member">
                         <h2>Mayank Mittal</h2>
                         <p>mayankm@iitk.ac.in<br>Room A-305/5<br>7755057609</p>
@@ -357,7 +361,7 @@ if(isset($_SESSION['login_user'])){
                 <div id="teamSlider">
                   <ul class="slides profiles">
                     <li>
-                      <div class="col-md-2 wp5">
+                      <div class="col-md-2 col-xs-4 wp5">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -369,7 +373,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 ">
+                      <div class="col-md-2 col-xs-4 wp5 ">
                         <img src="img/team-02.png" alt="Team Member">
                         <h2>Cersei Lannister</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -381,7 +385,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-05s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-05s">
                         <img src="img/team-03.png" alt="Team Member">
                         <h2>Jamie Lannister</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -393,7 +397,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-05s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-05s">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -405,7 +409,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-1s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-1s">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -417,7 +421,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-1s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-1s">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -431,7 +435,7 @@ if(isset($_SESSION['login_user'])){
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-2 wp5">
+                      <div class="col-md-2 col-xs-4 wp5">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -443,7 +447,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 ">
+                      <div class="col-md-2 col-xs-4 wp5 ">
                         <img src="img/team-02.png" alt="Team Member">
                         <h2>Cersei Lannister</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -455,7 +459,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-05s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-05s">
                         <img src="img/team-03.png" alt="Team Member">
                         <h2>Jamie Lannister</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -467,7 +471,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-05s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-05s">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -479,7 +483,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-1s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-1s">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -491,7 +495,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-1s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-1s">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -505,7 +509,7 @@ if(isset($_SESSION['login_user'])){
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-2 wp5">
+                      <div class="col-md-2 col-xs-4 wp5">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -517,7 +521,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 ">
+                      <div class="col-md-2 col-xs-4 wp5 ">
                         <img src="img/team-02.png" alt="Team Member">
                         <h2>Cersei Lannister</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -529,7 +533,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-05s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-05s">
                         <img src="img/team-03.png" alt="Team Member">
                         <h2>Jamie Lannister</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -541,7 +545,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-05s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-05s">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -553,7 +557,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-1s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-1s">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -565,7 +569,7 @@ if(isset($_SESSION['login_user'])){
                           </ul>
                         </div>
                       </div>
-                      <div class="col-md-2 wp5 delay-1s">
+                      <div class="col-md-2 col-xs-4 wp5 delay-1s">
                         <img src="img/team-01.png" alt="Team Member">
                         <h2>Jon Snow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
@@ -659,12 +663,5 @@ if(isset($_SESSION['login_user'])){
         <script src="js/scripts.js"></script>
         <script src="js/jquery.flexslider.js"></script>
         <script src="js/modernizr.js"></script>
-        <script type="text/javascript">
-        $('document').ready(function(){
-          $('[data-spy="scroll"]').each(function () {
-            var $spy = $(this).scrollspy('refresh')
-          })
-        });
-        </script>
       </body>
     </html>
