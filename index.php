@@ -27,10 +27,10 @@ if(isset($_SESSION['login_user'])){
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
       </head>
-      <body id="top">
+      <body id="top" data-spy="scroll" data-target="#navbar" data-offset="50">
         <script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5" async></script>
         <header id="home">
-          <div clas = "container">
+          <div class = "container" id = "navbar">
             <nav class=" navbar navbar-fixed-top navbar-default">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
@@ -43,7 +43,7 @@ if(isset($_SESSION['login_user'])){
               </div>
               <div class = "navbar-right navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                  <li><a href="#intro">Introduction </a></li>
+                  <li class="active"><a href="#intro">Introduction </a></li>
                   <li><a href="#responsive">News and Achievements </a></li>
                   <li><a href="#portfolio">Projects</a></li>
                   <li><a href="#team">Team</a></li>
